@@ -87,9 +87,9 @@ var server = ws.createServer(function (conn) {
     conn.name = "p"+id
     broadcast(server,'有新人加入.')
     conn.on("text",function (str) {
-        if(str.slice(0,9)=='nickname |'){
+        if(str.slice(0,9)=='nickname|'){
             conn.name=str.split('|')[1]
-            Broadcast(server,conn.name+'上线了。')
+            broadcast(server,conn.name+'上线了。')
             return
         }
         broadcast(server,conn.name+':'+str)
