@@ -58,15 +58,18 @@ function init(rowCount, colCount, minLandMineCount, maxLandMineCount) {
         landMineCountElement.innerHTML = count;
     };
 
+    //为“开始游戏”按钮绑定事件
     beginButton.onclick = function () {
-        jms.play();
+        jms.play();//初始化
 
+        //显示地雷个数
         landMineCountElement.innerHTML = jms.landMineCount;
 
+        //开始
         jms.begin();
         this.disabled="disabled"
 
-     
+        //
         timeHandle = setInterval(function() {
             timeShow.innerHTML = parseInt((new Date() - jms.beginTime) / 1000);
         }, 1000);
