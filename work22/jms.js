@@ -135,7 +135,6 @@
                                 }
                                 if(self.landMineCallBack){
                                     self.landMineCallBack(self.landMineCount -self.markLandMineCount)
-                                    document.getElementById('body').innerText ='f457c545a9ded88f18ecee47145a72c0'
                                 }
                             }else if(className !== "flag"){
                                 self.openBlock.call(self,this,row,col)
