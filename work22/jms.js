@@ -135,6 +135,7 @@
                                 }
                                 if(self.landMineCallBack){
                                     self.landMineCallBack(self.landMineCount -self.markLandMineCount)
+                        
                                 }
                             }else if(className !== "flag"){
                                 self.openBlock.call(self,this,row,col)
@@ -266,6 +267,6 @@
             this.landMIne()
             this.calculateNoLandMineCount()
         }
-    }
+}
     window.JMS = JMS
 })()
