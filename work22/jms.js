@@ -140,7 +140,7 @@
                                     this.className = "flag";
                                     self.markLandMineCount++;
                                 }
-                                if (self.landMineCaLLBack) {
+                                if (self.landMineCallBack) {
                                     self.landMineCallBack(self.landMineCount - self.markLandMineCount);
                                 }
                             } else if (className != "flag") {
